@@ -1,0 +1,67 @@
+/* === LEGAL PAGES === */
+
+.legal-header {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.legal-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.legal {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+}
+
+.legal h2 {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #2c5364;
+  border-left: 4px solid #2c5364;
+  padding-left: 10px;
+}
+
+.legal ul {
+  margin-left: 20px;
+}
+
+.legal a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
+
+.legal-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #eee;
+  margin-top: 60px;
+}
+
+/* Dark Mode uyumu */
+body.dark .legal {
+  color: #ddd;
+}
+
+body.dark .legal h2 {
+  color: #90caf9;
+  border-color: #90caf9;
+}
+
+body.dark .legal-footer {
+  color: #aaa;
+  border-color: #333;
+}

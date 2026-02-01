@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gelir Gider Takibi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1 id="title">Gelir Gider Takibi</h1>
+  <p id="subtitle">Harcamalarını ve gelirlerini kolayca yönet</p>
+</header>
+
+<!-- AUTH -->
+<section id="authBox">
+  <input type="email" id="email" placeholder="E-posta">
+  <input type="password" id="password" placeholder="Şifre">
+  <button id="loginBtn">Giriş Yap</button>
+  <button id="registerBtn">Kayıt Ol</button>
+</section>
+
+<!-- APP -->
+<main id="app" style="display:none">
+
+  <!-- ADD -->
+  <div class="add-box">
+    <input id="titleInput" placeholder="Açıklama">
+    <input id="amountInput" type="number" placeholder="Tutar">
+    <select id="typeInput">
+      <option value="income">Gelir</option>
+      <option value="expense">Gider</option>
+    </select>
+    <button id="addBtn">Ekle</button>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    <div>Gelir: <span id="incomeTotal">0 ₺</span></div>
+    <div>Gider: <span id="expenseTotal">0 ₺</span></div>
+  </div>
+
+  <!-- CHART -->
+  <div class="chart-box">
+    <canvas id="chart"></canvas>
+  </div>
+
+  <!-- LIST -->
+  <ul id="transactionList"></ul>
+
+  <!-- AD AREA -->
+  <div class="ad-box">
+    <h3>Reklam Alanı</h3>
+    <p>Reklam Vermek için berkbey187@gmail.com</p>
+    <!-- ÖRNEK -->
+    <!-- <a href="https://siteadresin.com">Yeni Projem</a> -->
+  </div>
+
+  <button class="logout" id="logoutBtn">Çıkış Yap</button>
+</main>
+
+<!-- LANGUAGE -->
+<div class="lang-switch">
+  <select id="langSelect">
+    <option value="tr">Türkçe</option>
+    <option value="en">English</option>
+    <option value="de">Deutsch</option>
+    <option value="fr">Français</option>
+    <option value="es">Español</option>
+  </select>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="privacy.html">Gizlilik Politikası</a>
+    <a href="terms.html">Kullanım Şartları</a>
+  </div>
+  <div class="footer-copy">
+    © 2026 YBG13™ – Tüm hakları saklıdır.
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

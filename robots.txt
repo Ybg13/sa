@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ybg13.github.io/Ybg13-/sitemap.xml
